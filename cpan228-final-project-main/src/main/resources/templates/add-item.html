@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Add Item</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h2>Add New Item to Distribution Centre</h2>
+
+    <form action="/add-item" method="post">
+      <label>Centre ID: <input type="number" name="centreId" required /></label
+      ><br />
+      <label>Name: <input type="text" name="name" required /></label><br />
+      <label
+        >Brand:
+        <select name="brand">
+          <option value="GUCCI">GUCCI</option>
+          <option value="PRADA">PRADA</option>
+          <option value="VERSACE">VERSACE</option>
+          <option value="LOUIS_VUITTON">LOUIS_VUITTON</option>
+          <option value="BALENCIAGA">BALENCIAGA</option>
+        </select> </label
+      ><br />
+      <label
+        >Price: <input type="number" step="0.01" name="price" required /></label
+      ><br />
+      <label
+        >Year Created:
+        <input type="number" name="yearCreated" required /></label
+      ><br />
+      <label>Quantity: <input type="number" name="quantity" required /></label
+      ><br />
+
+      <button type="submit">Add Item</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Request Item</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h2>Request Item</h2>
+    <form action="/distribution-centres/request-item" method="post">
+      <label
+        >Item Name:
+        <input type="text" name="name" required /> </label
+      ><br />
+
+      <label
+        >Brand:
+        <select name="brand" required>
+          <option value="BALENCIAGA">BALENCIAGA</option>
+          <option value="GUCCI">GUCCI</option>
+          <option value="LOUIS_VUITTON">LOUIS_VUITTON</option>
+          <option value="PRADA">PRADA</option>
+          <option value="VERSACE">VERSACE</option>
+        </select> </label
+      ><br />
+
+      <button type="submit">Request Item</button>
+    </form>
+  </body>
+</html>

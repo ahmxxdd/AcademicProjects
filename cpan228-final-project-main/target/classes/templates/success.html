@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Success</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h2>Success</h2>
+
+    <div th:if="${item != null}">
+      <p th:text="'Name: ' + ${item.name}"></p>
+      <p th:text="'Brand: ' + ${item.brand}"></p>
+      <p th:text="'Price: ' + ${item.price}"></p>
+    </div>
+
+    <div th:if="${centre != null}">
+      <p th:text="'Replenished from Centre ID: ' + ${centre.id}"></p>
+    </div>
+
+    <div th:if="${message != null}">
+      <p th:text="${message}"></p>
+    </div>
+
+    <a href="/index">Go Home</a>
+  </body>
+</html>
