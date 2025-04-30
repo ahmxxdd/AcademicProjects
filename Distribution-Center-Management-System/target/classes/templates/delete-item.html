@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Delete Item</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h2>Delete Item by ID</h2>
+
+    <form action="/delete-item" method="post">
+      <label>Item ID: <input type="number" name="itemId" required /></label
+      ><br />
+      <button type="submit">Delete</button>
+    </form>
+  </body>
+</html>

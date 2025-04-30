@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Error</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h2>Request Failed</h2>
+
+    <p th:text="${message}">Item not found or out of stock.</p>
+
+    <br />
+    <a href="/request-item">Try Again</a>
+    <br />
+    <a href="/index">Go to Home</a>
+  </body>
+</html>
