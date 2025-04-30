@@ -1,3 +1,6 @@
+# Social Media Platform Project
+# Group Members: Ahmed W., Maleek E.
+
 AMusic
 
 Overview
